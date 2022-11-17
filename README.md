@@ -11,8 +11,9 @@ The purpose of this project is to perform employee research for the company Pewl
 
 ## Results
 This project produced four tables in pgAdmin 4 that were then exported to csv files for further analysis. The four csv files that were produced are: retirement_titles.csv, unique_titles.csv, retiring_titles.csv, and mentorship_eligibilty.csv.
+* In retirement_title.csv we pulled data from the Employees table and the Titles table to form a new table with six columns of data. The columns are employee number, first name, last name, title, from date, and to date. The data was then filtered to retrieve the data of employees who were born between 1952 and 1955. From this table we found out that there are 133,776 employees who fit this criteria. 
 
-In retirement_title.csv we displayed 
+![retirement_title](https://user-images.githubusercontent.com/111299372/202531937-528ee539-603a-4fe7-9f54-e08522501062.png)
 
 ## Summary
 
