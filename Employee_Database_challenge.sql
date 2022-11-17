@@ -34,7 +34,6 @@ ORDER BY emp_no ASC, to_date DESC;
 --View unique titles table
 SELECT * FROM unique_titles;
 
-
 --Query to retrieve the number of employees by their most recent 
 --job title who are about to retire
 SELECT COUNT(unique_titles.emp_no), unique_titles.title
@@ -45,3 +44,24 @@ ORDER BY COUNT(title) DESC;
 
 --View retiring titles column
 SELECT * FROM retiring_titles;
+
+--Query to create a mentorship eligibility table
+SELECT DISTINCT ON (e.emp_no) e.emp_no,
+e.first_name,
+e.last_name,
+e.birth_date,
+de.from_date,
+de.to_date,
+t.title
+INTO mentorship_elgibility 
+FROM employees AS e
+INNER JOIN dept_emp as de
+ON e.emp_no=de.emp_no
+INNER JOIN titles as t
+ON e.emp_no=t.emp_no
+WHERE (de.to_date = '9999-01-01') 
+AND (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY emp_no ASC;
+
+--View mentorship eligibility table
+SELECT * FROM mentorship_elgibility;
