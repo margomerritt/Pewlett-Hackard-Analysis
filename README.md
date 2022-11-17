@@ -23,6 +23,10 @@ This project produced four tables in pgAdmin 4 that were then exported to csv fi
 
 ![retiring_titles](https://user-images.githubusercontent.com/111299372/202533761-caa631f6-4d47-435d-a39a-3856a9c0b03b.png)
 
+* The mentorship_eligibility.csv table contains seven columns of data. The columns are: the employee number, first name, last name, birth date, from date, to date, and job title. This data filtered to display data of current employees whose birth dates are between January 1, 1965 and December 31, 1965. From this table we see that there are 1,549 employees who meet this criteria. 
+* 
+![mentorship_eligibility](https://user-images.githubusercontent.com/111299372/202534809-e0ba8d01-0925-407f-b396-df1a32d85fb1.png)
+
 
 ## Summary
 
