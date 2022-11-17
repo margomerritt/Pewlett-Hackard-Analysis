@@ -53,7 +53,7 @@ e.birth_date,
 de.from_date,
 de.to_date,
 t.title
-INTO mentorship_elgibility 
+INTO mentorship_elgibility
 FROM employees AS e
 INNER JOIN dept_emp as de
 ON e.emp_no=de.emp_no
@@ -65,3 +65,22 @@ ORDER BY emp_no ASC;
 
 --View mentorship eligibility table
 SELECT * FROM mentorship_elgibility;
+
+--Query to find employees born in or after 1980. 
+SELECT e.emp_no, e.first_name, e.last_name, t.title, t.from_date, t.to_date 
+INTO mid_level
+FROM employees AS e
+INNER JOIN titles AS t  
+ON e.emp_no=t.emp_no
+WHERE (e.birth_date BETWEEN '1980-01-01' AND '2004-12-31')
+ORDER BY emp_no ASC;
+
+--View mid_level table 
+SELECT * FROM mid_level;
+
+--Query to find current count of early to mid-level employees by job title. 
+SELECT COUNT(mid_level.emp_no), mid_level.title
+INTO mid_level_titles
+FROM mid_level
+GROUP BY title
+ORDER BY COUNT(title) DESC;
