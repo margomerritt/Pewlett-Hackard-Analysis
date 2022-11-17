@@ -10,6 +10,9 @@ The purpose of this project is to perform employee research for the company Pewl
 * Software: PostgreSQL 12, pgaAdmin 4
 
 ## Results
+This project produced four tables in pgAdmin 4 that were then exported to csv files for further analysis. The four csv files that were produced are: retirement_titles.csv, unique_titles.csv, retiring_titles.csv, and mentorship_eligibilty.csv.
+
+In retirement_title.csv we displayed 
 
 ## Summary
 
