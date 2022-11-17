@@ -35,5 +35,6 @@ This project produced four tables in pgAdmin 4 that were then exported to csv fi
 
 One way to get more potential mentors is to expand the age of employees who are eligible to be a mentor. In the Mentorship Eligibility query we filtered the data to find all employees whose birth dates are between January 1, 1965 and December 31, 1965. Filtering the data to get all employees whose birth dates are between January 1, 1960 and December 31, 1969 will greatly increase our eligible mentor pool. This will give a ten year birth year range instead of a one year birth year range we had in the original query. 
 
-	
+There are additional queries and tables we can produce to help us further analyze and prepare for the incoming silver tsunami. One helpful query is to filter the data to find employees who were born in or after 1980. This will help determine if there are currently enough younger employees at the company to take over the roles of employees who are close to retirement. This query could look like: 
+![Screen Shot 2022-11-17 at 3 37 42 PM](https://user-images.githubusercontent.com/111299372/202554698-289c5136-9d38-4d86-94ee-9835f2ee5753.png)
 
